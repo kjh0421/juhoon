@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>About HTML</title>
+    <style>
+      #hi{
+        font-size: 50px;
+        font-style: normal;
+        display: block;
+        color: black;
+      }
+      #explain{
+        font-size: 15px;
+        font-style: normal;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a href="http://192.168.55.185/index.html">
+        <img src="html_logo.png" width="50"><img src="logo.png" width="143">
+      </a>
+    </p>
+    <p>
+      <ul>
+        <a href="http://192.168.55.185/objective.html">
+          <li>html의 목적</li>
+        </a>
+        <a href="http://192.168.55.185/principle.html">
+          <li>html의 원리</li>
+        </a>
+      </ul>
+    </p>
+    <p id="explain">
+      html의 원리는 간단하다.
+      우선 html의 구조를 알아야 한다.
+      html은 원하는 내용을 상황에 따라 알맞는 태그로 묶으면 끝이다.
+      여기서 우리는 하나의 페이지를 head와 body, 이렇게 둘로 나눌 수 있다.
+    </p>
+    <p id="explain">
+      body부터 살펴보자.
+      body는 우리가 해당 페이지에서 직접 눈으로 볼 수 있는 부분이다.
+      지금 당신이 읽고 있는 이 글처럼 말이다.
+      아마도 html을 처음 배울때,
+      다들 body부분부터 공부했을 것이다.
+    </p>
+    <p id="explain">
+      다음으로, head에 대해서 살펴보자.
+      head는 페이지에서 보이지 않는 태그들(타이틀 등을 제외하고)로 이루어져 있다.
+      예를 들어, 이 페이지에 대한 설명이 있다.
+      body처럼 사이트에서 보일 것 같지만,
+      여기서 말하는 설명이란, 카카오톡 등으로 링크를 공유했을 때 나오는 설명이다.
+    </p>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web-1-y7yqizmkgj.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </body>
+</html>
